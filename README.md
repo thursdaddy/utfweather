@@ -21,11 +21,11 @@ zipcode:      5 digit US Postal Code
 
 ### Polybar Config
 
-####Add nerd-font to your bar configs, adjust size to your liking:
+#### Add nerd-font to your bar configs, adjust size to your liking:
 ```
 font-4 = "FuraMono Nerd Font Mono:style=Regular:pixelsize=22;2"
 ```
-####Configure weather module:
+#### Configure weather module:
 ```
 [module/weather]
 type = custom/script

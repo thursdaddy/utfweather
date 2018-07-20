@@ -3,7 +3,7 @@ utfweather
 
 Configurable forecast module for Polybar.
 
-### utfweather.conf
+## utfweather.conf
 > ~/.config/utfweather/utfweather.conf
 ```
 [general]
@@ -19,7 +19,7 @@ use_geoloc:   1 uses IP to get location, 0 to use zipcode
 zipcode:      5 digit US Postal Code
 ```
 
-### Polybar Config
+## Polybar Config
 
 #### Add nerd-font to your bar configs, adjust size to your liking:
 ```

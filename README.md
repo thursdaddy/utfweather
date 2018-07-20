@@ -42,6 +42,7 @@ click-right = ~/.config/scripts/weather.py -n
 
 ## Requirements
 * nerd-fonts-complete (UTF weather icons)
+* send-notify
 * Python 3.6 
 * pip packages:
   * requests

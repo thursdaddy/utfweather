@@ -220,13 +220,8 @@ home_dir = os.getenv("HOME")
 config_path = ("%s/.config/utfweather/utfweather.conf" % home_dir)
 cache_path = ("%s/.cache/utfweather/utfweather.cache" % home_dir)
 
-<<<<<<< HEAD
 if not os.path.exists("%s/.cache/utfweather" % home_dir):
     os.makedirs("%s/.cache/utfweather" % home_dir)
-=======
-if not os.path.exists(cache_path):
-    os.makedirs(os.path.dirname(cache_path))
->>>>>>> df93bd30d0e93e42e96cf3a3ebc4e52843676b77
 
 # load config file
 cp = ConfigParser()

@@ -220,8 +220,20 @@ home_dir = os.getenv("HOME")
 config_path = ("%s/.config/utfweather/utfweather.conf" % home_dir)
 cache_path = ("%s/.cache/utfweather/utfweather.cache" % home_dir)
 
+if not os.path.exists("%s/.cache/utfweather" % home_dir):
+    os.makedirs("%s/.cache/utfweather" % home_dir)
+
 # load config file
 cp = ConfigParser()
+
+cp.add_section('general')
+cp.set('general', 'use_geoloc', '0')
+cp.set('general', 'zipcode', '10001')
+cp.set('general', 'cache_ageout', '900')
+cp.set('general', 'forecast_type', 'short')
+with open('config_path', 'w') as configfile:
+    cp.write(configfile)
+
 cp.read(config_path)
 
 logging.debug("Loaded the following settings:")

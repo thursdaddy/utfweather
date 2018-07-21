@@ -3,7 +3,7 @@ utfweather
 
 Configurable forecast module for Polybar.
 
-### utfweather.conf
+## utfweather.conf
 > ~/.config/utfweather/utfweather.conf
 ```
 [general]
@@ -19,13 +19,13 @@ use_geoloc:   1 uses IP to get location, 0 to use zipcode
 zipcode:      5 digit US Postal Code
 ```
 
-### Polybar Config
+## Polybar Config
 
-####Add nerd-font to your bar configs, adjust size to your liking:
+#### Add nerd-font to your bar configs, adjust size to your liking:
 ```
 font-4 = "FuraMono Nerd Font Mono:style=Regular:pixelsize=22;2"
 ```
-####Configure weather module:
+#### Configure weather module:
 ```
 [module/weather]
 type = custom/script
@@ -42,6 +42,7 @@ click-right = ~/.config/scripts/weather.py -n
 
 ## Requirements
 * nerd-fonts-complete (UTF weather icons)
+* send-notify
 * Python 3.6 
 * pip packages:
   * requests
